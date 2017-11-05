@@ -4,24 +4,22 @@
 
 
 body {
-  font-family: Helvetica,Arial,sans-serif;
+  background: black;
+  color: white;
 }
 
-a, a:visited {
-  color: navy;
+a {
+  color: white;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:visited {
+  color: lightgrey;
 }
 
-
-
-
-#header {
-  padding: 4px;
-}
+/* #header { */
+/*   padding: 4px; */
+/* } */
 
 #header .big {
   font-size:   140%;
@@ -30,14 +28,40 @@ a:hover {
 
 #header .small {
   font-size:    90%;
-  color:        grey;
+  color:        lightgrey;
   padding-left: 15px;
 }
 
-#nav {
-  padding: 6px;
+/* #nav { */
+/*   padding: 6px; */
+/* } */
+
+
+
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+    animation: 2s linear infinite condemned_blink_effect;
 }
-
-
-
-
+@-webkit-keyframes condemned_blink_effect { // for android
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
